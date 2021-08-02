@@ -1,0 +1,31 @@
+body {
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div .button {
+    width: 150px;
+    border-radius: 10px;
+    border-style: double;
+    border-width: 5px;
+    border-color: darkblue;
+    color: cornsilk;
+    padding: 8px;
+    text-align: center;
+    transition: 0.8s;
+    cursor: pointer;
+    font-size: x-large;
+}
+
+.button:hover {
+    border-color: blueviolet;
+    border-radius: 10px;
+    color: greenyellow;
+    box-shadow: 0px 12px 20px darkmagenta;
+    padding: 8px;
+    transform: scale(1.1, 1.1);
+    transition: 1s;
+    text-shadow: 80px 40px 80px yellow;
+}
