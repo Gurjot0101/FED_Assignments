@@ -1,0 +1,140 @@
+body {
+    background-image: url("https://wallpaperaccess.com/full/31189.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    min-height: 100vh;
+    overflow-y: hidden;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: black;
+}
+
+.label {
+    padding: 4px;
+    font-weight: bolder;
+    font-size: 50px;
+}
+
+#date {
+    font-size: 19px;
+    font-weight: bolder;
+}
+
+
+/*searchbar*/
+
+.searchbar {
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+#inp {
+    width: 55vw;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border: 0px;
+    color: black;
+    font-size: x-large;
+    font-weight: bolder;
+    padding-left: 25px;
+    background-color: rgba(255, 255, 255, 0.6);
+    outline: none;
+}
+
+#inp:active {
+    border: 0px;
+    outline: none;
+}
+
+#searchicon {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: 0px;
+    transition: 1300ms;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+#searchicon:hover {
+    transform: scale(1.1, 1.1);
+    transition: 500ms;
+    cursor: pointer;
+    background-color: black;
+}
+
+::placeholder {
+    color: black;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+label {
+    font-size: 50px;
+    margin: 0px;
+    color: white;
+}
+
+
+/*box*/
+
+#container {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: fit-content;
+    height: max-content;
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 40px;
+    padding: 15px;
+    transition: 1300ms;
+    color: black;
+    font-weight: bolder;
+}
+
+#container:hover {
+    transform: scale(1.05);
+    transition: 500ms;
+}
+
+.t1 {
+    font-size: 50px;
+}
+
+.t2 {
+    font-size: 90px;
+}
+
+.t3 {
+    font-size: 35px;
+}
+
+.t4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.t5 span {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 15px;
+    white-space: nowrap;
+}
+
+
+/*For responsive*/
+
+@media (max-width: 750px) {
+    body {
+        overflow-y: scroll;
+        min-height: 101vh;
+    }
+    #container {
+        width: 80vw;
+        max-height: max-content;
+    }
+    #darkmode {
+        position: relative;
+    }
+}
