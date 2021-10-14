@@ -1,0 +1,21 @@
+/* main */
+
+.app {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.app label {
+    margin-top: 10px;
+    font-size: xx-large;
+    color: black;
+    font-weight: bolder;
+    -webkit-text-stroke-width: 2.5px;
+    -webkit-text-stroke-color: rgb(185, 0, 185);
+}
+
+@media screen and (max-width: 340px) {
+    .app label {
+        font-size: x-large;
+    }
+}

@@ -1,0 +1,67 @@
+/* input,form,button */
+
+.todoinput {
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.todoinput input {
+    min-width: max-content;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 0px;
+    color: black;
+    font-size: x-large;
+    font-weight: bolder;
+    padding-left: 25px;
+    background-color: rgba(255, 255, 255, 0.9);
+    outline: none;
+    transition: 2000ms;
+}
+
+.todoinput input:hover {
+    box-shadow: 0px 0px 10px 7px purple;
+    transition: 500ms;
+}
+
+.todoinput button {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border: none;
+    border-left: 1px solid black;
+    transition: 1200ms;
+    padding: 14px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.todoinput button:hover {
+    transition: 500ms;
+    cursor: pointer;
+    color: white;
+    background-color: purple;
+    box-shadow: 0px 0px 10px 4px black;
+}
+
+ ::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 600px) {
+    .todoinput input {
+        min-width: 60vw;
+    }
+}
+
+@media screen and (max-width: 340px) {
+     ::placeholder {
+        font-size: medium;
+    }
+}

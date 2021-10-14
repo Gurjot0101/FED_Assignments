@@ -1,0 +1,81 @@
+/* li */
+
+.list {
+    background: black;
+    border: 3px solid rgb(255, 118, 244);
+    box-shadow: 0px 0px 10px 5px purple;
+    border-radius: 10px;
+    padding: 1px;
+    margin: 10px;
+    overflow: hidden;
+    color: white;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.list div:first-child {
+    overflow-x: auto;
+}
+
+.list div {
+    word-break: normal;
+    padding: 5px;
+    margin: 5px;
+    display: inline-block;
+}
+
+.list div span {
+    display: inline-block;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.list div span:hover {
+    cursor: pointer;
+    transform: scale(1.5, 1.5);
+    transition: 200ms;
+}
+
+.list div:last-child {
+    border-left: 2px solid rgb(255, 118, 244);
+    padding-left: 10px;
+}
+
+.list span:first-child:hover {
+    transform: scale(1.5, 1.5);
+    color: rgb(0, 157, 255);
+}
+
+.list span:nth-child(2):hover {
+    color: rgb(255, 0, 0);
+}
+
+.list span:nth-child(4):hover,
+span:nth-child(3):hover {
+    color: greenyellow;
+}
+
+@media screen and (max-width: 600px) {
+    .list {
+        box-sizing: border-box;
+    }
+    .list div span {
+        transform: scale(1, 1);
+    }
+    .list div:first-child {
+        width: 100%;
+        border-bottom: 2px solid rgb(194, 0, 194);
+        text-align: center;
+    }
+    .list div:last-child {
+        width: 100%;
+        text-align: center;
+        border: none;
+        padding-left: 5px;
+    }
+}
